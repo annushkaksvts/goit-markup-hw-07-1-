@@ -69,11 +69,11 @@ body {
 }
 
 .container {
-	width: 1158px;
+	/* width: 1158px; */
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	/* padding-left: 15px;
+	padding-right: 15px; */
 }
 
 /* header */
@@ -102,8 +102,8 @@ body {
 	text-transform: uppercase;
 	color: var(--iris-web);
 	margin-right: 76px;
-	padding-top: 24px;
-	padding-bottom: 24px;
+	/* padding-top: 24px;
+	padding-bottom: 24px; */
 }
 
 .logosp {
@@ -186,11 +186,11 @@ body {
 /* Header 1 */
 
 .hero {
-	max-width: 1440px;
-	height: 600px;
+	/* max-width: 1440px; */
+	/* height: 600px; */
 	background-color: var(--title-text-color);
-	padding-top: 188px;
-	padding-bottom: 188px;
+	/* padding-top: 188px;
+	padding-bottom: 188px; */
 	margin: 0 auto;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 	background-size: cover;
@@ -199,21 +199,22 @@ body {
 }
 
 /* .hero-container {
-	background-image: url("../images/people-office\ 1\ \(1\).jpg");
+	padding-top: 188px;
+	padding-bottom: 188px;
 } */
 
 .hero-title {
 	font-weight: 700;
-	font-size: 56px;
-	line-height: 1.07;
+	/* font-size: 56px;
+	line-height: 1.07; */
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: #ffffff;
 	/* розмітка */
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 48px;
-	max-width: 496px;
+	/* margin-bottom: 48px; */
+	/* max-width: 496px; */
 }
 
 /* Button */
@@ -222,8 +223,7 @@ body {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
-	display: flex;
-	align-items: center;
+
 	letter-spacing: 0.04em;
 	color: #ffffff;
 	cursor: pointer;
@@ -235,7 +235,7 @@ body {
 	border: none;
 	border-radius: 4px;
 	padding: 16px 32px 16px 32px;
-	height: 56px;
+
 	margin-left: auto;
 	margin-right: auto;
 
@@ -305,8 +305,8 @@ body {
 /* Header 3 */
 .title-list {
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 1.2;
+	/* font-size: 20px;
+	line-height: 1.2; */
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
 	margin-bottom: 8px;
@@ -408,8 +408,8 @@ body {
 
 .list-title {
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 1.2;
+	/* font-size: 20px;
+	line-height: 1.2; */
 	text-align: center;
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
@@ -1094,4 +1094,30 @@ body {
 	background-color: var(--ocean-color);
 	border: none;
 	fill: var(--white-kolor);
+}
+
+@media screen and (max-width: 767.9px) {
+	.container {
+		max-width: 428px;
+		padding: 16px 0;
+	}
+
+	.menu {
+		display: none;
+	}
+	.address {
+		display: none;
+	}
+	.svg-spdt {
+		display: none;
+	}
+	.aboutus {
+		display: none;
+	}
+	.hero-title {
+		margin-bottom: 72px;
+	}
+	.hero-container {
+		padding: 112px 0;
+	}
 }
