@@ -755,7 +755,6 @@ body {
 }
 
 .subscribe-input {
-	/* width: 264px; */
 	height: 40px;
 	border: 1px solid #ffffff;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1111,7 +1110,7 @@ body {
 
 @media screen and (max-width: 767.9px) {
 	.container {
-		min-width: 428px;
+		max-width: 428px;
 		padding: 0 16px;
 	}
 
@@ -1209,9 +1208,6 @@ body {
 		flex-direction: column;
 		gap: 16px;
 	}
-	.subscribe-input {
-		width: 398px;
-	}
 
 	.mobile-menu-close {
 		position: absolute;
@@ -1278,6 +1274,15 @@ body {
 		line-height: 1.11;
 	}
 
+	.subscribe {
+		width: 100%;
+	}
+	.form-subscribe-label {
+		width: 100%;
+	}
+	.subscribe-input {
+		width: 100%;
+	}
 	.mail-link {
 		font-family: "Roboto";
 		font-style: normal;
@@ -1302,7 +1307,8 @@ body {
 	}
 
 	.s-networks {
-		gap: 56px;
+		gap: 24px;
+		justify-content: center;
 	}
 	.mobile-menu.is-open {
 		transition-property: transform;
@@ -1322,5 +1328,21 @@ body {
 	.hero {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url("../images/mobile@2.jpg/hero1_mobile@2x.jpg.jpg");
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+	}
+	.spdt {
+		padding-left: 96px;
+		padding-right: 96px;
+	}
+	.mobile-menu {
+		display: none;
+	}
+	.mobile-burger-open-button {
+		display: none;
 	}
 }
