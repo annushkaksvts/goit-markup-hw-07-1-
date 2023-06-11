@@ -1334,6 +1334,10 @@ body {
 	.svg-spdt {
 		display: none;
 	}
+	.header-container {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
 	.hero-container {
 		padding-top: 112px;
 		padding-bottom: 112px;
@@ -1381,6 +1385,16 @@ body {
 		row-gap: 72px;
 		column-gap: 24px;
 	}
+	.customers-cont {
+		width: 584px;
+	}
+	.footer-container {
+		width: 584px;
+		gap: 74px 24px;
+	}
+	.subscribe-input {
+		width: 264px;
+	}
 }
 @media screen and (min-width: 768px) {
 	.list-spdt {
@@ -1388,4 +1402,10 @@ body {
 		flex-wrap: wrap;
 		column-gap: 24px;
 	}
+	.footer-container {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (min-width: 1158px) {
 }
