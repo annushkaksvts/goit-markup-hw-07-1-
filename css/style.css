@@ -150,7 +150,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 4px;
-	bottom: -1px;
+	/* bottom: -10px; */
 
 	background-color: var(--ocean-color);
 	border-radius: 2px;
@@ -186,12 +186,11 @@ body {
 
 .hero {
 	max-width: 1440px;
-	/* height: 600px; */
 	background-color: var(--title-text-color);
 	/* padding-top: 188px;
 	padding-bottom: 188px; */
 	margin: 0 auto;
-	/* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -332,7 +331,6 @@ body {
 /* Header 2 */
 .aboutus {
 	padding-top: 0;
-	padding-bottom: 120px;
 }
 
 .wrwd {
@@ -1332,9 +1330,21 @@ body {
 	}
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 1158px),
+	screen and (min-resolution: 192dpi) and (max-width: 767.9px),
+	screen and(min-resolution: 2dppx) and (max-width: 767.9px) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../images/tablet@2.jpg/people-office_1@2x[1].jpg");
+	}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1157.9px) {
 	.container {
 		width: 768px;
+	}
+	.current::after {
+		bottom: -33px;
 	}
 	.svg-spdt {
 		display: none;
@@ -1385,6 +1395,10 @@ body {
 	.our-team {
 		gap: 64px 24px;
 	}
+	.team-container {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 	.customers-list {
 		flex-wrap: wrap;
 		row-gap: 72px;
@@ -1392,6 +1406,8 @@ body {
 	}
 	.customers-cont {
 		width: 584px;
+		padding-top: 96px;
+		padding-bottom: 96px;
 	}
 	.footer-container {
 		width: 584px;
@@ -1399,6 +1415,11 @@ body {
 	}
 	.subscribe-input {
 		width: 264px;
+	}
+	.menu-nav {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 1.5;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -1422,6 +1443,10 @@ body {
 	.container {
 		width: 1158px;
 	}
+	.header-container {
+		padding-top: 24px;
+		padding-bottom: 24px;
+	}
 	.hero-container {
 		padding: 188px 0;
 	}
@@ -1437,12 +1462,22 @@ body {
 	.spdt-card {
 		width: 264px;
 	}
+	.team-container {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
 	.our-team {
 		gap: 24px;
 	}
 	.team-list {
 		width: calc((100% - 72px) / 4);
 	}
+	.customers-cont {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+
 	.customers-list {
 		gap: 24px;
 	}
@@ -1460,5 +1495,16 @@ body {
 	}
 	.image {
 		width: 100%;
+	}
+	.wrwd-container {
+		padding-bottom: 120px;
+	}
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../images/decktop.jpg/people-office_1[1].jpg");
+	}
+
+	.current::after {
+		bottom: -26px;
 	}
 }
