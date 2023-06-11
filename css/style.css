@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-	/* width: 1158px; */
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 	/* padding-left: 15px;
@@ -122,11 +122,11 @@ body {
 .menu-nav {
 	display: block;
 	position: relative;
-	padding-top: 24px;
+	/* padding-top: 24px;
 	padding-bottom: 24px;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.5; */
 	letter-spacing: 0.02em;
 	color: var(--title-text-color);
 
@@ -185,13 +185,13 @@ body {
 /* Header 1 */
 
 .hero {
-	/* max-width: 1440px; */
+	max-width: 1440px;
 	/* height: 600px; */
 	background-color: var(--title-text-color);
 	/* padding-top: 188px;
 	padding-bottom: 188px; */
 	margin: 0 auto;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+	/* background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -363,7 +363,7 @@ body {
 
 .team {
 	background-color: var(--color-text-p);
-	padding: 120px 0;
+	/* padding: 120px 0; */
 }
 
 .team-list {
@@ -455,9 +455,9 @@ body {
 	height: 88px;
 }
 
-.customers-section {
+/* .customers-section {
 	padding: 120px 0;
-}
+} */
 
 .customers-cont {
 	margin-left: auto;
@@ -516,8 +516,8 @@ body {
 .customers-list {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	gap: 24px;
+	/* align-items: center;
+	gap: 24px; */
 	cursor: pointer;
 }
 
@@ -529,12 +529,12 @@ body {
 
 .footer-container {
 	display: flex;
-	align-items: baseline;
+	/* align-items: baseline; */
 }
 
 .ft-container {
 	max-width: 264px;
-	margin-right: 120px;
+	/* margin-right: 120px; */
 }
 
 .footerlg {
@@ -587,9 +587,9 @@ body {
 
 .s-networks {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	align-items: center;
-	gap: 24px;
+	/* gap: 24px; */
 	cursor: pointer;
 }
 
@@ -732,9 +732,9 @@ body {
 
 /* subscribe */
 
-.subscribe {
+/* .subscribe {
 	margin-left: 80px;
-}
+} */
 
 .form-footer {
 	display: flex;
@@ -755,7 +755,7 @@ body {
 }
 
 .subscribe-input {
-	width: 264px;
+	/* width: 264px; */
 	height: 40px;
 	border: 1px solid #ffffff;
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1096,10 +1096,28 @@ body {
 	fill: var(--white-kolor);
 }
 
+.mobile-burger-open-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: transparent;
+	padding-right: 0;
+	padding-left: 0cm;
+}
+.mobile-burger-open-use {
+	fill: var(--title-text-color);
+}
+
 @media screen and (max-width: 767.9px) {
 	.container {
-		max-width: 428px;
+		min-width: 428px;
 		padding: 0 16px;
+	}
+
+	.header {
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 	.section-spdt {
 		padding: 96px 0;
@@ -1116,6 +1134,11 @@ body {
 	.aboutus {
 		display: none;
 	}
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7))
+			url("../images/mobile.jpg/hero1_mobile@1x.jpg.jpg");
+	}
+
 	.hero-title {
 		margin-bottom: 72px;
 	}
@@ -1138,7 +1161,166 @@ body {
 	.title-description {
 		font-weight: 500;
 	}
+	.team {
+		padding: 96px 0;
+	}
+
 	.our-team {
 		row-gap: 72px;
+	}
+	.customers-section {
+		padding: 96px 0;
+	}
+	.customers-list {
+		column-gap: 16px;
+		row-gap: 72px;
+		flex-wrap: wrap;
+	}
+	.customers-link {
+		width: 190px;
+		height: 88px;
+	}
+
+	.footer {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
+
+	.footer-container {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 72px;
+	}
+	.footerlg {
+		display: flex;
+		justify-content: center;
+	}
+
+	.social-footer {
+		display: flex;
+		justify-content: center;
+	}
+	.name-subscribe {
+		display: flex;
+		justify-content: center;
+	}
+	.form-footer {
+		flex-direction: column;
+		gap: 16px;
+	}
+	.subscribe-input {
+		width: 398px;
+	}
+
+	.mobile-menu-close {
+		position: absolute;
+
+		top: 24px;
+		right: 24px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		padding: 0;
+		border-radius: 50%;
+		background-color: #e7e9fc;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		cursor: pointer;
+
+		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.mobile-menu {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 80px;
+		padding-right: 35px;
+		padding-bottom: 40px;
+		padding-left: 40px;
+		background-color: var(--white-kolor);
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: auto;
+
+		transition-property: transform;
+		transition-duration: var(--transition-duration);
+		transition-timing-function: var(--timing-function);
+
+		transform: translateX(100%);
+		box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+			0px 1px 6px rgba(46, 47, 66, 0.08);
+	}
+
+	.list-navigation-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+	.list-contacts-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-top: auto;
+		margin-bottom: 48px;
+	}
+	.tel-link {
+		font-family: "Roboto";
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.11;
+	}
+
+	.mail-link {
+		font-family: "Roboto";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 1.2;
+
+		letter-spacing: 0.02em;
+		color: #434455;
+	}
+	.menu-nav {
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1.11;
+		letter-spacing: 0.02em;
+		color: var(--title-text-color);
+
+		transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	.color {
+		color: var(--ocean-color);
+	}
+
+	.s-networks {
+		gap: 56px;
+	}
+	.mobile-menu.is-open {
+		transition-property: transform;
+		transition-duration: var(--transition-duration);
+		transition-timing-function: var(--timing-function);
+
+		transform: translateX(0);
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+}
+
+@media screen and(min-device-pixel-ratio: 2) and (max-width: 767.9px),
+	screen and (min-resolution: 192dpi),
+	screen and(min-resolution: 2dppx) {
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../images/mobile@2.jpg/hero1_mobile@2x.jpg.jpg");
 	}
 }
