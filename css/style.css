@@ -400,6 +400,7 @@ body {
 
 .image {
 	display: block;
+	/* width: 100%; */
 }
 
 .team-card {
@@ -1316,11 +1317,15 @@ body {
 		visibility: visible;
 		pointer-events: auto;
 	}
+	.hero {
+		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url("../images/mobile@2.jpg/hero1_mobile@2x.jpg.jpg");
+	}
 }
 
 @media screen and(min-device-pixel-ratio: 2) and (max-width: 767.9px),
-	screen and (min-resolution: 192dpi),
-	screen and(min-resolution: 2dppx) {
+	screen and (min-resolution: 192dpi) and (max-width: 767.9px),
+	screen and(min-resolution: 2dppx) and (max-width: 767.9px) {
 	.hero {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url("../images/mobile@2.jpg/hero1_mobile@2x.jpg.jpg");
@@ -1437,5 +1442,23 @@ body {
 	}
 	.team-list {
 		width: calc((100% - 72px) / 4);
+	}
+	.customers-list {
+		gap: 24px;
+	}
+	.ft-container {
+		margin-right: 120px;
+	}
+	.social-media {
+		margin-right: 80px;
+	}
+	.subscribe-input {
+		width: 264px;
+	}
+	.hero {
+		max-width: 1440px;
+	}
+	.image {
+		width: 100%;
 	}
 }
