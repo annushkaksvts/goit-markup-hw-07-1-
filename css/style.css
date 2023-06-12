@@ -1159,10 +1159,7 @@ body {
 	.team {
 		padding: 96px 0;
 	}
-	.team-container {
-		padding-top: 96px;
-		padding-bottom: 96px;
-	}
+
 	.our-team {
 		row-gap: 72px;
 	}
