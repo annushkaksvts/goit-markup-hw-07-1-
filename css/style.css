@@ -190,7 +190,8 @@ body {
 	/* padding-top: 188px;
 	padding-bottom: 188px; */
 	margin: 0 auto;
-	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+		url(../images/decktop@2.jpg/people-office_1@2x[1].jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -831,8 +832,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 408px;
-	min-height: 584px;
+	/* width: 408px;
+	height: 584px; */
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
@@ -1139,6 +1140,7 @@ body {
 
 	.hero-title {
 		margin-bottom: 72px;
+		max-width: 320px;
 	}
 	.hero-container {
 		padding: 112px 0;
@@ -1162,7 +1164,10 @@ body {
 	.team {
 		padding: 96px 0;
 	}
-
+	.team-container {
+		padding-top: 96px;
+		padding-bottom: 96px;
+	}
 	.our-team {
 		row-gap: 72px;
 	}
@@ -1319,6 +1324,13 @@ body {
 		background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url("../images/mobile@2.jpg/hero1_mobile@2x.jpg.jpg");
 	}
+	.modal {
+		width: 95%;
+		min-width: 392px;
+		height: 95%;
+		min-height: 584px;
+		overflow: scroll;
+	}
 }
 
 @media screen and(min-device-pixel-ratio: 2) and (max-width: 767.9px),
@@ -1342,6 +1354,15 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1157.9px) {
 	.container {
 		width: 768px;
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+	.modal {
+		width: 95%;
+		min-width: 392px;
+		height: 95%;
+		min-height: 584px;
+		overflow: scroll;
 	}
 	.current::after {
 		bottom: -33px;
@@ -1352,17 +1373,25 @@ body {
 	.header-container {
 		padding-top: 16px;
 		padding-bottom: 16px;
+		padding-right: 16px;
+		padding-left: 16px;
 	}
 	.hero-container {
 		padding-top: 112px;
 		padding-bottom: 112px;
 	}
 	.hero-title {
+		font-weight: 700;
+		font-size: 56px;
+		line-height: 1.07;
 		margin-bottom: 36px;
 	}
 	.address-list {
 		flex-direction: column;
 		row-gap: 12px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 1.16;
 	}
 	.mobile-menu {
 		display: none;
@@ -1396,8 +1425,8 @@ body {
 		gap: 64px 24px;
 	}
 	.team-container {
-		padding-top: 120px;
-		padding-bottom: 120px;
+		padding-top: 96px;
+		padding-bottom: 96px;
 	}
 	.customers-list {
 		flex-wrap: wrap;
@@ -1443,12 +1472,13 @@ body {
 	.container {
 		width: 1158px;
 	}
+	.modal {
+		width: 100%px;
+		height: 100%px;
+	}
 	.header-container {
 		padding-top: 24px;
 		padding-bottom: 24px;
-	}
-	.hero-container {
-		padding: 188px 0;
 	}
 	.section-spdt {
 		padding-top: 120px;
@@ -1492,6 +1522,9 @@ body {
 	}
 	.hero {
 		max-width: 1440px;
+		padding: 188px 0;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.image {
 		width: 100%;
